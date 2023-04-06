@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flexarticle {
+            background-color: rgb(246, 189, 119);
+
+        }
+
+        footer {
+            background-color: rgb(208, 204, 204);
+            height: 100px;
+
+        }
+
+
+        .flexcontainer {
+
+            display: flex;
+            margin: auto;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            justify-content: space-around;
+            width: 1000px;
+
+        }
+
+
+
+        .first {
+
+            padding-top: 2%;
+            height: 50px;
+            background-color: rgb(208, 204, 204);
+            flex-grow: 1;
+
+
+        }
+
+        .flexarticle {
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(245, 238, 205);
+            height: 300px;
+            width: 700px;
+            justify-content: space-between;
+            padding-top: 2%;
+
+        }
+
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 8px;
+
+
+        }
+
+        .article1 {
+
+
+            background-color: rgb(243, 221, 155);
+            height: 60px;
+            width: 20%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            flex-grow: 1;
+
+        }
+
+        .article2 {
+
+            flex-direction: column;
+            flex-wrap: wrap;
+            background-color: rgb(243, 221, 155);
+            flex-grow: 1;
+
+            height: 60px;
+            width: 70%;
+        }
+
+
+        .flexasaid {
+
+            background-color: rgb(211, 240, 185);
+            height: 300px;
+            width: 300px;
+            padding-top: 7%;
+
+        }
+
+        .flexfooter {
+            display: flex;
+            text-align: center;
+            background-color: white;
+            margin-top: auto;
+            margin-bottom: auto;
+            height: 70px;
+            width: 200px;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="flexcontainer">
+        <div class="first"> [Шапка страницы]</div>
+    </header>
+    <main class="flexcontainer">
+
+        <article class="flexarticle">
+            [Основная часть]
+            <div class="section">
+
+                <div class="article1 section">
+                    <p> [Ещё 1]</p>
+
+                </div>
+                <div class="article1 section">
+                    <p> [Ещё 2]</p>
+                </div>
+                <div class="article2 section"> [Eщё 3]</div>
+            </div>
+
+
+        </article>
+
+        <aside>
+            <div class="flexasaid">[Боковая область]</div>
+        </aside>
+
+
+    </main>
+
+
+    <footer class="flexcontainer">
+
+        <div class="flexfooter">[Секция футера 1]</div>
+        <div class="flexfooter">[Секция футера 2] </div>
+        <div class="flexfooter">[Секция футера 3]</div>
+        <div class="flexfooter">[Секция футера 4]</div>
+
+
+
+    </footer>
+</body>
+
+
+</html>
